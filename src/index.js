@@ -225,8 +225,7 @@ new p5(p => {
 
             // Draw ring
             if (body.ring_color !== undefined) {
-                /*
-                let texture_size = radius * 3 * 500;
+                let texture_size = Math.max(bodies[i].radius / size_scale.value(), 1) * 3 * 500;
                 p.rotateX(90);
                 ring_textures[body.name].clear();
                 ring_textures[body.name].noFill();
@@ -236,11 +235,6 @@ new p5(p => {
                 p.texture(ring_textures[body.name]);
                 p.noStroke();
                 p.plane(radius * 6, radius * 6);
-                */
-                p.rotateX(90);
-                p.noStroke();
-                p.fill(body.ring_color);
-                p.torus(radius*3, radius, 100, 3);
             }
 
             p.pop();
