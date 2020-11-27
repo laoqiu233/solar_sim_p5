@@ -245,8 +245,4 @@ new p5(p => {
         real_z = Math.max(real_z + event.delta, 20);
         console.log(real_z);
     };
-
-    p.windowResized = () => {
-        p.resizeCanvas(window.innerWidth, window.innerHeight * 0.8);
-    }
 }, document.getElementById('p5'));
