@@ -240,7 +240,7 @@ new p5(p => {
                 p.rotateX(90);
                 p.noStroke();
                 p.emissiveMaterial(body.ring_color);
-                p.torus(radius*3, radius, 100, 3s);
+                p.torus(radius*3, radius, 100, 3);
             }
 
             p.pop();
