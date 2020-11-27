@@ -66,7 +66,7 @@ const bodies = [
         texture_path: jupiter_texture,
         sidereal_period: 9 * 60 * 60 * 1000 + 56 * 60 * 1000, // 9h 56m
         orbital_period: 12 * 365 * 24 * 60 * 60 * 1000, // 12y
-        ring_color: 100
+        ring_color: 255
     },
     {
         name: 'Saturn',
@@ -76,7 +76,7 @@ const bodies = [
         texture_path: saturn_texture,
         sidereal_period: 10 * 60 * 60 * 1000 + 42 * 60 * 1000, // 10h 42m
         orbital_period: 29 * 365 * 24 * 60 * 60 * 1000, // 29y
-        ring_color: 100
+        ring_color: 255
     },
     {
         name: 'Uranus',
