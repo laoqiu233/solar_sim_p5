@@ -147,7 +147,7 @@ new p5(p => {
 
         for (let i=0; i<bodies.length; i++) {
             if (bodies[i].ring_color) {
-                let texture_size = Math.max(bodies[i].radius / size_scale.value(), 1) * 3 * 500;
+                let texture_size = Math.max(bodies[i].radius / size_scale.value(), 1) * 6 * 100;
                 ring_textures[bodies[i].name] = p.createGraphics(texture_size, texture_size);
             }
         }
@@ -225,12 +225,12 @@ new p5(p => {
 
             // Draw ring
             if (body.ring_color !== undefined) {
-                let texture_size = Math.max(bodies[i].radius / size_scale.value(), 1) * 3 * 500;
+                let texture_size = Math.max(bodies[i].radius / size_scale.value(), 1) * 6 * 100;
                 p.rotateX(90);
                 ring_textures[body.name].clear();
                 ring_textures[body.name].noFill();
                 ring_textures[body.name].stroke(body.ring_color);
-                ring_textures[body.name].strokeWeight(texture_size / 5);
+                ring_textures[body.name].strokeWeight(texture_size / 6 * 0.8);
                 ring_textures[body.name].circle(texture_size / 2, texture_size / 2, texture_size / 1.5);
                 p.texture(ring_textures[body.name]);
                 p.noStroke();
